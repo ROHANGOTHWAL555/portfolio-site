@@ -1,50 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact KuberMedia - Get in Touch | IT Solutions Company</title>
+  <meta name="description" content="Contact KuberMedia for your IT project needs. Get free consultation, request quotes, or reach out to our expert team. Multiple ways to connect with us.">
+  <meta name="keywords" content="contact KuberMedia, IT consultation, project quote, get in touch, contact form, business inquiry">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">KuberMedia</a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <a href="#contact-form" class="cta-button">Get Your Website Free</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">☰</button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <form action="https://formsubmit.co/rohangothwal@proton.me" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Let's Build Something Amazing Together</h1>
+        <p>Ready to transform your business with cutting-edge technology? Get in touch with our expert team for a free consultation and discover how we can help you achieve your goals.</p>
+        <div class="hero-cta">
+          <a href="#contact-form" class="cta-button">Start Your Project</a>
+          <a href="#contact-info" class="cta-button cta-secondary">Contact Information</a>
+        </div>
+      </div>
+    </section>
 
-      <div class="contact-icons">
-        <a href="mailto:rohangothwal@proton.me" target="_blank" class="icon-link">
-          <i class="fas fa-envelope"></i> Email
-        </a>
-        <a href="https://wa.me/918503815026" target="_blank" class="icon-link">
-          <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
+    <!-- Contact Methods -->
+    <section class="section" id="contact-info">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Multiple ways to reach our team of experts</p>
+        </div>
+        
+        <div class="contact-methods">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>Speak directly with our project managers</p>
+            <div class="contact-details">
+              <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a>
+              <span>Mon-Fri, 9AM-6PM PST</span>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>Send us your project requirements</p>
+            <div class="contact-details">
+              <a href="mailto:hello@kubermedia.com">hello@kubermedia.com</a>
+              <span>Response within 24 hours</span>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Live Chat</h3>
+            <p>Chat with our support team instantly</p>
+            <div class="contact-details">
+              <a href="#" onclick="openChat()">Start Live Chat</a>
+              <span>Available 24/7</span>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-calendar"></i>
+            </div>
+            <h3>Schedule a Call</h3>
+            <p>Book a free consultation meeting</p>
+            <div class="contact-details">
+              <a href="#" onclick="scheduleCall()">Book Meeting</a>
+              <span>30-minute consultation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="section" style="background: var(--light-gray);">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Our Locations</h2>
+          <p class="section-subtitle">Global presence with local expertise</p>
+        </div>
+        
+        <div class="office-locations">
+          <div class="office-card">
+            <div class="office-flag">🇺🇸</div>
+            <h3>San Francisco, USA</h3>
+            <p class="office-type">Headquarters</p>
+            <div class="office-address">
+              <p>123 Innovation Drive<br>
+              San Francisco, CA 94102<br>
+              United States</p>
+            </div>
+            <div class="office-contact">
+              <a href="tel:+1-555-123-4567"><i class="fas fa-phone"></i> +1 (555) 123-4567</a>
+            </div>
+          </div>
+          
+          <div class="office-card">
+            <div class="office-flag">🇮🇳</div>
+            <h3>Bangalore, India</h3>
+            <p class="office-type">Development Center</p>
+            <div class="office-address">
+              <p>Tech Park, Block A, Floor 12<br>
+              Electronic City, Bangalore 560100<br>
+              India</p>
+            </div>
+            <div class="office-contact">
+              <a href="tel:+91-80-1234-5678"><i class="fas fa-phone"></i> +91 80 1234 5678</a>
+            </div>
+          </div>
+          
+          <div class="office-card">
+            <div class="office-flag">🇬🇧</div>
+            <h3>London, UK</h3>
+            <p class="office-type">European Office</p>
+            <div class="office-address">
+              <p>45 Tech Square<br>
+              London EC2A 4DN<br>
+              United Kingdom</p>
+            </div>
+            <div class="office-contact">
+              <a href="tel:+44-20-1234-5678"><i class="fas fa-phone"></i> +44 20 1234 5678</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Contact Form -->
+    <section class="section" id="contact-form">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Start Your Project Today</h2>
+          <p class="section-subtitle">Tell us about your project and we'll provide a detailed proposal within 48 hours</p>
+        </div>
+        
+        <div class="contact-form-container">
+          <form class="enhanced-contact-form" id="main-contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company">
+            </div>
+            
+            <div class="form-group">
+              <label for="projectType">Project Type *</label>
+              <select id="projectType" name="projectType" required>
+                <option value="">Select project type...</option>
+                <option value="mobile-app">Mobile Application</option>
+                <option value="web-app">Web Application</option>
+                <option value="ai-automation">AI & Automation</option>
+                <option value="game-development">Game Development</option>
+                <option value="crm-system">CRM System</option>
+                <option value="marketing-tools">Digital Marketing Tools</option>
+                <option value="consultation">General Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="budget">Project Budget</label>
+                <select id="budget" name="budget">
+                  <option value="">Select budget range...</option>
+                  <option value="under-10k">Under $10,000</option>
+                  <option value="10k-25k">$10,000 - $25,000</option>
+                  <option value="25k-50k">$25,000 - $50,000</option>
+                  <option value="50k-100k">$50,000 - $100,000</option>
+                  <option value="100k-250k">$100,000 - $250,000</option>
+                  <option value="over-250k">Over $250,000</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="timeline">Desired Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Select timeline...</option>
+                  <option value="asap">ASAP</option>
+                  <option value="1-3-months">1-3 months</option>
+                  <option value="3-6-months">3-6 months</option>
+                  <option value="6-12-months">6-12 months</option>
+                  <option value="over-12-months">Over 12 months</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Project Description *</label>
+              <textarea id="message" name="message" rows="6" placeholder="Please describe your project requirements, goals, features needed, target audience, and any specific technologies you prefer..." required></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" value="yes">
+                <span class="checkmark"></span>
+                Subscribe to our newsletter for tech insights and updates
+              </label>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="privacy" required>
+                <span class="checkmark"></span>
+                I agree to the <a href="/privacy-policy" target="_blank">Privacy Policy</a> and <a href="/terms-of-service" target="_blank">Terms of Service</a> *
+              </label>
+            </div>
+            
+            <button type="submit" class="cta-button form-submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i> Sending...
+              </span>
+            </button>
+          </form>
+          
+          <div class="form-sidebar">
+            <div class="response-time">
+              <h3><i class="fas fa-clock"></i> Quick Response</h3>
+              <p>We typically respond to all inquiries within 2-4 hours during business hours.</p>
+            </div>
+            
+            <div class="free-consultation">
+              <h3><i class="fas fa-gift"></i> Free Consultation</h3>
+              <p>Get a 30-minute free consultation with our technical experts to discuss your project.</p>
+            </div>
+            
+            <div class="nda-available">
+              <h3><i class="fas fa-shield-alt"></i> NDA Available</h3>
+              <p>We can sign a Non-Disclosure Agreement before discussing your sensitive project details.</p>
+            </div>
+            
+            <div class="testimonial-snippet">
+              <h3><i class="fas fa-quote-left"></i> Client Feedback</h3>
+              <blockquote>
+                "KuberMedia's response time was incredible. They understood our requirements perfectly and delivered exactly what we needed."
+              </blockquote>
+              <cite>- Sarah Chen, Startup Founder</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--light-gray);">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Quick answers to common questions about our services and process</p>
+        </div>
+        
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3><i class="fas fa-question-circle"></i> How quickly can you start my project?</h3>
+            <p>We can typically start new projects within 1-2 weeks after finalizing requirements and contracts. For urgent projects, we offer expedited onboarding.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3><i class="fas fa-question-circle"></i> Do you provide ongoing support?</h3>
+            <p>Yes, we offer comprehensive maintenance and support packages for all our projects, including bug fixes, updates, and feature enhancements.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3><i class="fas fa-question-circle"></i> What technologies do you specialize in?</h3>
+            <p>We work with modern technologies including React, Node.js, Python, Flutter, React Native, AI/ML frameworks, and cloud platforms like AWS and Azure.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3><i class="fas fa-question-circle"></i> Can you work with our existing team?</h3>
+            <p>Absolutely! We're experienced in collaborating with in-house teams and can seamlessly integrate with your existing development processes.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3><i class="fas fa-question-circle"></i> Do you sign NDAs?</h3>
+            <p>Yes, we're happy to sign Non-Disclosure Agreements to protect your confidential information and intellectual property.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3><i class="fas fa-question-circle"></i> What's your payment structure?</h3>
+            <p>We typically work with milestone-based payments: 30% upfront, 40% at midpoint, and 30% upon completion. Custom arrangements are available for larger projects.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 RG. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>KuberMedia</h3>
+        <p>Leading IT solutions company specializing in mobile applications, AI automation, and digital transformation services for modern businesses.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#mobile-apps">Mobile Applications</a></li>
+          <li><a href="services.html#software-dev">Software Development</a></li>
+          <li><a href="services.html#ai-automation">AI Automation</a></li>
+          <li><a href="services.html#games">Game Development</a></li>
+          <li><a href="services.html#crm">CRM Solutions</a></li>
+          <li><a href="services.html#marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="about.html#careers">Careers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="products.html">Portfolio</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#contact-form">Get Free Website</a></li>
+          <li><a href="contact.html">Request Quote</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/support">Support Center</a></li>
+          <li><a href="/sitemap">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 KuberMedia. All rights reserved. | Transforming businesses through innovative technology solutions.</p>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Chat and scheduling functions
+    function openChat() {
+      alert('Live chat feature would be integrated with your preferred chat platform (Intercom, Zendesk, etc.)');
+    }
+    
+    function scheduleCall() {
+      alert('Scheduling feature would be integrated with calendar systems like Calendly or Acuity Scheduling');
+    }
+  </script>
 </body>
 </html>
