@@ -2,30 +2,334 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KuberMedia - Leading IT Solutions & Digital Innovation Company</title>
+  <meta name="description" content="KuberMedia provides cutting-edge mobile applications, software development, AI automation, games, CRM solutions, and digital marketing tools. Transform your business with our expert IT services.">
+  <meta name="keywords" content="IT company, mobile apps, software development, AI automation, games, CRM, digital marketing">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="KuberMedia - Leading IT Solutions & Digital Innovation">
+  <meta property="og:description" content="Transform your business with our expert IT services including mobile apps, AI automation, and digital marketing tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kubermedia.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <!-- Header with Sticky Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">KuberMedia</a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <a href="#contact" class="cta-button">Get Your Website Free</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">☰</button>
+      </div>
+    </div>
   </header>
+
   <main>
-    <section>
-      <h2>Welcome to my website</h2>
-      <p>This is my minimalist portfolio.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Transform Your Business with Cutting-Edge IT Solutions</h1>
+        <p>We deliver innovative mobile applications, AI automation, enterprise software, and digital marketing tools that drive growth and efficiency for forward-thinking companies.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="cta-button">Get Your Website Free</a>
+          <a href="#services" class="cta-button cta-secondary">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Our Core Services</h2>
+          <p class="section-subtitle">Comprehensive IT solutions designed to accelerate your digital transformation and business growth</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile Applications</h3>
+            <p>Native and cross-platform mobile apps that deliver exceptional user experiences across iOS and Android platforms.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Software Development</h3>
+            <p>Custom enterprise software solutions built with modern technologies to streamline your business operations.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>AI Automation</h3>
+            <p>Intelligent automation solutions that optimize workflows and boost productivity through machine learning and AI.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <h3>Game Development</h3>
+            <p>Engaging mobile and web games with immersive experiences that captivate audiences and drive user engagement.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <h3>CRM Solutions</h3>
+            <p>Comprehensive customer relationship management systems that enhance customer interactions and sales processes.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Digital Marketing Tools</h3>
+            <p>Advanced marketing automation and analytics platforms to amplify your digital presence and ROI.</p>
+          </div>
+        </div>
+        
+        <div class="text-center mt-2">
+          <a href="services.html" class="cta-button">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="section-container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3 class="counter" data-target="500">0</h3>
+            <p>Projects Delivered</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="150">0</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="50">0</h3>
+            <p>Expert Developers</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="99">0</h3>
+            <p>% Success Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="section testimonials">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">Real feedback from companies that have transformed their business with KuberMedia</p>
+        </div>
+        
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              "KuberMedia transformed our entire digital infrastructure. Their AI automation solutions increased our productivity by 300% while reducing operational costs significantly."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">RS</div>
+              <div class="author-info">
+                <h4>Rajesh Sharma</h4>
+                <p>CEO, TechVenture Solutions</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              "The mobile application they developed for our e-commerce platform resulted in a 250% increase in user engagement and 180% boost in sales conversion rates."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">PK</div>
+              <div class="author-info">
+                <h4>Priya Kapoor</h4>
+                <p>CTO, Digital Commerce Hub</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              "Their CRM solution streamlined our customer management process completely. We've seen 400% improvement in customer satisfaction and retention rates."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">AS</div>
+              <div class="author-info">
+                <h4>Amit Singh</h4>
+                <p>Director, Global Enterprises</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Ready to Transform Your Business?</h2>
+          <p class="section-subtitle">Let's discuss your project requirements and create innovative solutions together</p>
+        </div>
+        
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company">
+          </div>
+          
+          <div class="form-group">
+            <label for="service">Service Interest *</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service...</option>
+              <option value="mobile-apps">Mobile Applications</option>
+              <option value="software-dev">Software Development</option>
+              <option value="ai-automation">AI Automation</option>
+              <option value="game-dev">Game Development</option>
+              <option value="crm">CRM Solutions</option>
+              <option value="digital-marketing">Digital Marketing Tools</option>
+              <option value="consultation">General Consultation</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="budget">Project Budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select budget range...</option>
+              <option value="under-10k">Under $10,000</option>
+              <option value="10k-25k">$10,000 - $25,000</option>
+              <option value="25k-50k">$25,000 - $50,000</option>
+              <option value="50k-100k">$50,000 - $100,000</option>
+              <option value="over-100k">Over $100,000</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Project Details *</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project requirements, goals, and timeline..." required></textarea>
+          </div>
+          
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="section-container">
+        <h2>Stay Updated with Latest Tech Trends</h2>
+        <p>Subscribe to our newsletter for industry insights, technology updates, and exclusive offers</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" name="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>© 2025 RG MEDIA TECHNOLOGIES</p>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>KuberMedia</h3>
+        <p>Leading IT solutions company specializing in mobile applications, AI automation, and digital transformation services for modern businesses.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#mobile-apps">Mobile Applications</a></li>
+          <li><a href="services.html#software-dev">Software Development</a></li>
+          <li><a href="services.html#ai-automation">AI Automation</a></li>
+          <li><a href="services.html#games">Game Development</a></li>
+          <li><a href="services.html#crm">CRM Solutions</a></li>
+          <li><a href="services.html#marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="about.html#careers">Careers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="products.html">Portfolio</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#contact">Get Free Website</a></li>
+          <li><a href="contact.html">Request Quote</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/support">Support Center</a></li>
+          <li><a href="/sitemap">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 KuberMedia. All rights reserved. | Transforming businesses through innovative technology solutions.</p>
+    </div>
   </footer>
+
+  <!-- JavaScript -->
   <script src="js/script.js"></script>
 </body>
 </html>

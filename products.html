@@ -1,52 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Products - My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products & Portfolio - KuberMedia | Delivered Solutions</title>
+  <meta name="description" content="Explore KuberMedia's portfolio of successful projects including mobile apps, enterprise software, AI solutions, games, and digital platforms delivered to clients worldwide.">
+  <meta name="keywords" content="portfolio, mobile apps, software projects, AI solutions, case studies, client work">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html" class="active">Products</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">KuberMedia</a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <a href="index.html#contact" class="cta-button">Get Your Website Free</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">☰</button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="products">
-      <h2>My Products</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="./images/2.jpg" alt="Product 1">
-          <h3>Web Development</h3>
-          <p>Mobile Responsive web design websites full support.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Our Portfolio of Success Stories</h1>
+        <p>Discover how we've helped businesses transform their operations with innovative technology solutions, from mobile apps to AI automation platforms.</p>
+        <div class="hero-cta">
+          <a href="#portfolio" class="cta-button">View Our Work</a>
+          <a href="contact.html" class="cta-button cta-secondary">Start Your Project</a>
         </div>
-        <div class="product-card">
-          <img src="./images/1.jpg" alt="Product 2">
-          <h3>App Development</h3>
-          <p>Android/IOS Applications for Your Brand.</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Categories -->
+    <section class="section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects by Category</h2>
+          <p class="section-subtitle">Explore our diverse portfolio of successful digital solutions across various industries</p>
         </div>
-        <div class="product-card">
-          <img src="./images/3.jpg" alt="Product 3">
-          <h3>AI Tools</h3>
-          <p>AI Tools like cahtbots,GPTs,IOT Etc.</p>
+        
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="ai">AI Automation</button>
+          <button class="filter-btn" data-filter="games">Games</button>
+          <button class="filter-btn" data-filter="crm">CRM</button>
+          <button class="filter-btn" data-filter="marketing">Marketing Tools</button>
         </div>
-        <!-- Add more products here -->
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="section" id="portfolio" style="padding-top: 0;">
+      <div class="section-container">
+        <div class="portfolio-grid">
+          <!-- Mobile App Projects -->
+          <div class="portfolio-item" data-category="mobile">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>EcomMobile - E-commerce App</h3>
+              <p>Complete e-commerce solution with 250% increase in user engagement and seamless payment integration.</p>
+              <div class="portfolio-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">iOS</span>
+                <span class="tag">Android</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>2.5M+</strong>
+                  <span>Downloads</span>
+                </div>
+                <div class="stat">
+                  <strong>4.8★</strong>
+                  <span>App Store Rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="mobile">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>HealthTracker Pro</h3>
+              <p>Comprehensive health monitoring app with AI-powered insights and medical professional integration.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">AI/ML</span>
+                <span class="tag">HealthKit</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>500K+</strong>
+                  <span>Active Users</span>
+                </div>
+                <div class="stat">
+                  <strong>98%</strong>
+                  <span>User Satisfaction</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Software Projects -->
+          <div class="portfolio-item" data-category="software">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-building"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Enterprise Resource Planner</h3>
+              <p>Complete ERP solution for manufacturing company with inventory, HR, and financial management modules.</p>
+              <div class="portfolio-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>75%</strong>
+                  <span>Efficiency Increase</span>
+                </div>
+                <div class="stat">
+                  <strong>$2M+</strong>
+                  <span>Cost Savings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="software">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>EduPlatform Online</h3>
+              <p>Comprehensive learning management system with video streaming, assignments, and progress tracking.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">AWS</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>10K+</strong>
+                  <span>Students</span>
+                </div>
+                <div class="stat">
+                  <strong>500+</strong>
+                  <span>Courses</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Automation Projects -->
+          <div class="portfolio-item" data-category="ai">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-robot"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>SmartChat AI Assistant</h3>
+              <p>Intelligent customer service chatbot with natural language processing and 24/7 automated support.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">NLP</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>90%</strong>
+                  <span>Query Resolution</span>
+                </div>
+                <div class="stat">
+                  <strong>60%</strong>
+                  <span>Cost Reduction</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="ai">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-chart-line"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Predictive Analytics Suite</h3>
+              <p>Machine learning platform for sales forecasting and inventory optimization with real-time insights.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Docker</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>300%</strong>
+                  <span>ROI Increase</span>
+                </div>
+                <div class="stat">
+                  <strong>95%</strong>
+                  <span>Accuracy Rate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Projects -->
+          <div class="portfolio-item" data-category="games">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-gamepad"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Adventure Quest Mobile</h3>
+              <p>Immersive RPG game with multiplayer features, in-app purchases, and engaging storyline.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Multiplayer</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>1M+</strong>
+                  <span>Downloads</span>
+                </div>
+                <div class="stat">
+                  <strong>4.6★</strong>
+                  <span>Rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="games">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Brain Training VR</h3>
+              <p>Virtual reality cognitive training application with adaptive difficulty and progress tracking.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Unity VR</span>
+                <span class="tag">Oculus</span>
+                <span class="tag">AI</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>85%</strong>
+                  <span>Improvement Rate</span>
+                </div>
+                <div class="stat">
+                  <strong>50K+</strong>
+                  <span>Sessions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CRM Projects -->
+          <div class="portfolio-item" data-category="crm">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-users-cog"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>SalesForce Pro</h3>
+              <p>Custom CRM solution with lead management, automated workflows, and comprehensive reporting.</p>
+              <div class="portfolio-tags">
+                <span class="tag">React</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>400%</strong>
+                  <span>Lead Conversion</span>
+                </div>
+                <div class="stat">
+                  <strong>50%</strong>
+                  <span>Time Savings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Marketing Tools -->
+          <div class="portfolio-item" data-category="marketing">
+            <div class="portfolio-image">
+              <div class="portfolio-placeholder">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Digital Marketing Hub</h3>
+              <p>All-in-one marketing platform with social media management, email campaigns, and analytics.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">Django</span>
+                <span class="tag">Redis</span>
+              </div>
+              <div class="portfolio-stats">
+                <div class="stat">
+                  <strong>200%</strong>
+                  <span>Engagement Boost</span>
+                </div>
+                <div class="stat">
+                  <strong>150%</strong>
+                  <span>ROI Increase</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="section" style="background: var(--light-gray);">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Case Study</h2>
+          <p class="section-subtitle">Deep dive into how we transformed a traditional business with digital innovation</p>
+        </div>
+        
+        <div class="case-study">
+          <div class="case-study-content">
+            <div class="case-study-info">
+              <h3>RetailTech Transformation</h3>
+              <p class="case-study-subtitle">Complete digital transformation for a retail chain with 100+ stores</p>
+              
+              <div class="challenge">
+                <h4><i class="fas fa-exclamation-triangle"></i> Challenge</h4>
+                <p>Traditional retail chain struggling with inventory management, customer engagement, and sales tracking across multiple locations.</p>
+              </div>
+              
+              <div class="solution">
+                <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                <ul>
+                  <li>Custom mobile app for customers with loyalty program</li>
+                  <li>Real-time inventory management system</li>
+                  <li>AI-powered sales analytics and forecasting</li>
+                  <li>Integrated POS system across all stores</li>
+                </ul>
+              </div>
+              
+              <div class="results">
+                <h4><i class="fas fa-trophy"></i> Results</h4>
+                <div class="results-grid">
+                  <div class="result-item">
+                    <strong>180%</strong>
+                    <span>Sales Increase</span>
+                  </div>
+                  <div class="result-item">
+                    <strong>65%</strong>
+                    <span>Cost Reduction</span>
+                  </div>
+                  <div class="result-item">
+                    <strong>300%</strong>
+                    <span>Customer Engagement</span>
+                  </div>
+                  <div class="result-item">
+                    <strong>6 Months</strong>
+                    <span>ROI Timeline</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="case-study-image">
+              <div class="case-study-placeholder">
+                <i class="fas fa-store"></i>
+                <h4>RetailTech Dashboard</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Trusted by Industry Leaders</h2>
+          <p class="section-subtitle">We've partnered with companies across various industries to deliver exceptional results</p>
+        </div>
+        
+        <div class="client-logos">
+          <div class="client-logo">TechCorp</div>
+          <div class="client-logo">InnovateLabs</div>
+          <div class="client-logo">GlobalSoft</div>
+          <div class="client-logo">FutureTech</div>
+          <div class="client-logo">DataDrive</div>
+          <div class="client-logo">CloudFirst</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Ready to Create Your Success Story?</h2>
+          <p class="section-subtitle">Let's discuss how we can help transform your business with innovative technology solutions</p>
+        </div>
+        
+        <div class="text-center">
+          <a href="contact.html" class="cta-button" style="margin-right: 1rem;">Start Your Project</a>
+          <a href="index.html#contact" class="cta-button cta-secondary">Get Free Consultation</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 RG. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>KuberMedia</h3>
+        <p>Leading IT solutions company specializing in mobile applications, AI automation, and digital transformation services for modern businesses.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#mobile-apps">Mobile Applications</a></li>
+          <li><a href="services.html#software-dev">Software Development</a></li>
+          <li><a href="services.html#ai-automation">AI Automation</a></li>
+          <li><a href="services.html#games">Game Development</a></li>
+          <li><a href="services.html#crm">CRM Solutions</a></li>
+          <li><a href="services.html#marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="about.html#careers">Careers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="products.html">Portfolio</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html#contact">Get Free Website</a></li>
+          <li><a href="contact.html">Request Quote</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/support">Support Center</a></li>
+          <li><a href="/sitemap">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 KuberMedia. All rights reserved. | Transforming businesses through innovative technology solutions.</p>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

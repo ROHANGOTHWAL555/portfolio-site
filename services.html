@@ -1,49 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services - My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - KuberMedia | IT Solutions & Digital Innovation</title>
+  <meta name="description" content="Explore KuberMedia's comprehensive IT services: mobile app development, AI automation, software solutions, game development, CRM systems, and digital marketing tools.">
+  <meta name="keywords" content="IT services, mobile app development, AI automation, software development, CRM, digital marketing, game development">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">KuberMedia</a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <a href="index.html#contact" class="cta-button">Get Your Website Free</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">☰</button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="services">
-      <h2>My Services</h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <h3>Web Development</h3>
-          <p>Creating fast, responsive, and professional websites.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Comprehensive IT Services for Modern Businesses</h1>
+        <p>From mobile applications to AI automation, we provide cutting-edge technology solutions that drive digital transformation and business growth.</p>
+        <div class="hero-cta">
+          <a href="#services" class="cta-button">Explore Services</a>
+          <a href="contact.html" class="cta-button cta-secondary">Get Free Consultation</a>
         </div>
-        <div class="service-card">
-          <h3>UI/UX Design</h3>
-          <p>Designing clean, user-friendly, modern interfaces.</p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+      <div class="section-container">
+        <!-- Mobile Applications -->
+        <div class="service-detail" id="mobile-apps">
+          <div class="service-detail-header">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div>
+              <h2>Mobile Application Development</h2>
+              <p>Create powerful, user-friendly mobile apps that engage customers and drive business growth across iOS and Android platforms.</p>
+            </div>
+          </div>
+          
+          <div class="service-features">
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Native iOS Development</h4>
+                <p>Swift and Objective-C apps optimized for iPhone and iPad with native performance and user experience.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Android Development</h4>
+                <p>Kotlin and Java applications designed for Android devices with Material Design principles.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Cross-Platform Solutions</h4>
+                <p>React Native and Flutter apps that work seamlessly across multiple platforms with single codebase.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> UI/UX Design</h4>
+                <p>Intuitive interfaces designed for optimal user engagement and conversion rates.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="service-card">
-          <h3>SEO Optimization</h3>
-          <p>Helping your website rank higher on search engines.</p>
+
+        <!-- Software Development -->
+        <div class="service-detail" id="software-dev">
+          <div class="service-detail-header">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div>
+              <h2>Custom Software Development</h2>
+              <p>Enterprise-grade software solutions built with modern technologies to streamline operations and boost productivity.</p>
+            </div>
+          </div>
+          
+          <div class="service-features">
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Web Applications</h4>
+                <p>Scalable web apps using React, Angular, Vue.js, and modern backend technologies.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Enterprise Solutions</h4>
+                <p>Complex business systems for inventory, accounting, HR, and operational management.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> API Development</h4>
+                <p>RESTful and GraphQL APIs for seamless integration with third-party services.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Cloud Integration</h4>
+                <p>AWS, Azure, and Google Cloud solutions for scalable and secure applications.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Add more services if needed -->
+
+        <!-- AI Automation -->
+        <div class="service-detail" id="ai-automation">
+          <div class="service-detail-header">
+            <div class="service-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div>
+              <h2>AI Automation Solutions</h2>
+              <p>Intelligent automation systems that optimize workflows, reduce manual tasks, and enhance decision-making processes.</p>
+            </div>
+          </div>
+          
+          <div class="service-features">
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Machine Learning</h4>
+                <p>Predictive analytics and pattern recognition to drive data-driven business decisions.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Process Automation</h4>
+                <p>RPA solutions to automate repetitive tasks and improve operational efficiency.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Chatbots & Virtual Assistants</h4>
+                <p>AI-powered customer service solutions for 24/7 support and engagement.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Data Analytics</h4>
+                <p>Advanced analytics platforms for business intelligence and performance insights.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Development -->
+        <div class="service-detail" id="games">
+          <div class="service-detail-header">
+            <div class="service-icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div>
+              <h2>Game Development</h2>
+              <p>Engaging games and interactive experiences for mobile, web, and console platforms with immersive gameplay.</p>
+            </div>
+          </div>
+          
+          <div class="service-features">
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Mobile Games</h4>
+                <p>iOS and Android games with monetization strategies and social features.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Web Games</h4>
+                <p>Browser-based games using HTML5, WebGL, and modern game engines.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> AR/VR Experiences</h4>
+                <p>Immersive augmented and virtual reality applications for training and entertainment.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Game Design</h4>
+                <p>Complete game design from concept to deployment with engaging mechanics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CRM Solutions -->
+        <div class="service-detail" id="crm">
+          <div class="service-detail-header">
+            <div class="service-icon">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <div>
+              <h2>CRM Solutions</h2>
+              <p>Comprehensive customer relationship management systems to enhance customer interactions and drive sales growth.</p>
+            </div>
+          </div>
+          
+          <div class="service-features">
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Sales Management</h4>
+                <p>Lead tracking, pipeline management, and sales automation for improved conversion rates.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Customer Support</h4>
+                <p>Ticketing systems and knowledge bases for exceptional customer service.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Marketing Automation</h4>
+                <p>Email campaigns, lead nurturing, and customer segmentation tools.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Analytics & Reporting</h4>
+                <p>Detailed insights into customer behavior and business performance metrics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Marketing Tools -->
+        <div class="service-detail" id="marketing">
+          <div class="service-detail-header">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div>
+              <h2>Digital Marketing Tools</h2>
+              <p>Advanced marketing platforms and automation tools to amplify your digital presence and maximize ROI.</p>
+            </div>
+          </div>
+          
+          <div class="service-features">
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> SEO Optimization</h4>
+                <p>Search engine optimization tools and strategies to improve organic visibility.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Social Media Management</h4>
+                <p>Automated posting, engagement tracking, and social media analytics platforms.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Email Marketing</h4>
+                <p>Personalized email campaigns with automation and performance tracking.</p>
+              </div>
+              <div class="feature-item">
+                <h4><i class="fas fa-check-circle"></i> Analytics Dashboards</h4>
+                <p>Comprehensive marketing analytics with real-time performance monitoring.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section" style="background: var(--light-gray);">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Our Development Process</h2>
+          <p class="section-subtitle">A proven methodology that ensures successful project delivery and client satisfaction</p>
+        </div>
+        
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h3>Discovery & Planning</h3>
+            <p>We analyze your requirements, market research, and create a comprehensive project roadmap with timelines and milestones.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h3>Design & Prototyping</h3>
+            <p>Our design team creates wireframes, mockups, and interactive prototypes to visualize the final product.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h3>Development & Testing</h3>
+            <p>Agile development with continuous testing, code reviews, and quality assurance at every stage.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h3>Deployment & Support</h3>
+            <p>Seamless deployment with ongoing maintenance, updates, and technical support to ensure optimal performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Ready to Get Started?</h2>
+          <p class="section-subtitle">Let's discuss your project and create innovative solutions that drive your business forward</p>
+        </div>
+        
+        <div class="text-center">
+          <a href="contact.html" class="cta-button" style="margin-right: 1rem;">Start Your Project</a>
+          <a href="index.html#contact" class="cta-button cta-secondary">Get Free Consultation</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 RG. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>KuberMedia</h3>
+        <p>Leading IT solutions company specializing in mobile applications, AI automation, and digital transformation services for modern businesses.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#mobile-apps">Mobile Applications</a></li>
+          <li><a href="#software-dev">Software Development</a></li>
+          <li><a href="#ai-automation">AI Automation</a></li>
+          <li><a href="#games">Game Development</a></li>
+          <li><a href="#crm">CRM Solutions</a></li>
+          <li><a href="#marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="about.html#careers">Careers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="products.html">Portfolio</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html#contact">Get Free Website</a></li>
+          <li><a href="contact.html">Request Quote</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/support">Support Center</a></li>
+          <li><a href="/sitemap">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 KuberMedia. All rights reserved. | Transforming businesses through innovative technology solutions.</p>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
